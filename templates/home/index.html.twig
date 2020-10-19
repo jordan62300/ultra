@@ -1,0 +1,140 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!
+{% endblock %}
+{% block stylesheets %}
+	{{parent()}}
+	<link rel="stylesheet" href="js/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="js/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+	<link href="styles/home2.css" rel="stylesheet">
+	<link rel="stylesheet" href="fonts/fontawesome/css/all.css">
+
+	<link rel="stylesheet" type="text/css" href="js/slick-1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="js/slick-1.8.1/slick/theme/slick-theme.css"/>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" defer></script>
+
+	<script src="js/OwlCarousel2-2.3.4/dist/owl.carousel.min.js" defer></script>
+	<script type="text/javascript" src="js/slick-1.8.1/slick/slick.min.js" defer></script>
+	<script type="text/javascript" src="js/owlSlider2.js" defer></script>
+	<script type="text/javascript" src="js/headerHomeSlider.js" defer></script>
+	<script type="text/javascript" src="js/previewShow.js" defer></script>
+	<script type="text/javascript" src="js/AspirantMangakaSlider.js" defer></script>
+	<script type="text/javascript" src="js/nouveauMangakaSlider.js" defer></script>
+	<script type="text/javascript" src="js/toggleArrow.js" defer></script>
+
+
+	<script src="js/test.js" defer></script>
+{% endblock %}
+
+{% block body %}
+	{{parent()}}
+	<div class="sticky-container"></div>
+	<header>
+		<div class="header-container">
+			<div id="carousel" class="owl-carousel owl-theme header-slider">
+				<div class="item-header">
+					<a href="#">
+						<img class="img-header" src="assets/imagesStatic/headeryoutube.png" alt="">
+					</a>
+				</div>
+				<div class="item-header">
+					<a href="#">
+						<img class="img-header" src="assets/imagesStatic/ultraMangaLogoPoly.png" alt="">
+					</a>
+				</div>
+				<div class="item-header">
+					<a href="#">
+						<img class="img-header" src="assets/imagesStatic/headeryoutube.png" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="teste">
+		<div class="ultraPlusContainer">
+		</div>
+		<div class="top5-container">
+			{% for manga in mangas  |slice(0, 5)%}
+				<div class="item-top-container">
+					<img class="top5" src="{{ vich_uploader_asset(manga,'imageFile')}}" alt=""/>
+				</div>
+			{% endfor %}
+		</div>
+	</section>
+
+	<section>
+		<h2 class="title1">
+			Vos favoris
+		</h2>
+		<div class="favori-container">
+			<div class="favori-item">
+				<img src="assets/imagesStatic/kuroko.png" alt="">
+			</div>
+			<div class="favori-item">
+				<img src="assets/imagesStatic/kuroko.png" alt="">
+			</div>
+			<div class="favori-item">
+				<img src="assets/imagesStatic/kuroko.png" alt="">
+			</div>
+		</div>
+	</section>
+
+	<section class="slidersection">
+		<h2 class="title1 title-slider">
+			LES ASPIRANTS MANGAKA
+		</h2>
+
+		<div class="container-manga-test first">
+			<div id="oui" class="list-test list-test1 owl-carousel">
+				{% for key, manga in mangas %}
+					<div class="item-slider-owl aspirant-item" data-soutien="{{manga.soutien}}" data-palier="250" data-vitrineune="images/mangas/vitrineUne/{{manga.fileNameVitrineUne}}" data-author="{{manga.users.username}}" data-nom="{{manga.nom}}" data-description="{{manga.description}}" id="{{key+1}}">
+					<a href="#newDiv">	<img src="{{ vich_uploader_asset(manga,'imageFile')}}" alt="" class="img-slider"/> </a>
+					</div>
+				{% endfor %}
+			</div>
+
+		</div>
+	</section>
+
+	<section class="slidersection">
+		<h2 class="title1 title-slider">
+			LES NOUVEAUX
+		</h2>
+		<div class="container-manga-test">
+		<!--	<span class="opacity-div2"></span> -->
+			<div class="list-test list-test2 owl-carousel">
+				{% for key, manga in mangas %}
+					<div data-soutien="{{manga.soutien}}" data-palier="250" data-vitrineune="images/mangas/vitrineUne/{{manga.fileNameVitrineUne}}" data-author="{{manga.users.username}}" data-nom="{{manga.nom}}" data-description="{{manga.description}}" id="{{key+1}}" class="item-slider-owl nouveau-item">
+					<a href="#newDic">	<img src="{{ vich_uploader_asset(manga,'imageFile')}}" alt="" class="img-slider"/> </a>
+					</div>
+				{% endfor %}
+			</div>
+		<!--	<span class="opacity-div1"></span>  -->
+		</div>
+
+
+	</section>
+	<section id="catalogue">
+		<h2 class="title2 title-center">
+			LE CATALOGUE
+		</h2>
+		<div class="filter-catalogue">
+			<a href="">Cagnotte</a>
+			<a href="">Tendances</a>
+			<a href="">Nouveautes</a>
+		</div>
+		<div class="catalogue-container">
+			<div class="catalogue-list">
+				{% for key, manga in mangas %}
+					<div data-soutien="{{manga.soutien}}" data-palier="250" data-vitrineune="images/mangas/vitrineUne/{{manga.fileNameVitrineUne}}" data-author="{{manga.users.username}}" data-nom="{{manga.nom}}" data-description="{{manga.description}}" id="{{key+1}}" {% if (key+1) % 7 == 0 %} class="catalogue-item-container row" {% else %} class="catalogue-item-container" {% endif %}>
+						<img src="{{ vich_uploader_asset(manga,'imageFile')}}" alt="" class="catalogue-item">
+					</div>
+
+				{% endfor %}
+			</div>
+
+		</div>
+	</section>
+{% endblock %}

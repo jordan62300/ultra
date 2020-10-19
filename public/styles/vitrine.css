@@ -1,0 +1,100 @@
+body {
+  background-color: #0c0c11;
+  color: #fff;
+  font-family: "MontserratMedium";
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  cursor: pointer;
+}
+
+.header-container {
+  margin-top: 98px;
+}
+
+.header-container img {
+  width: 630px;
+  height: 330px;
+  margin-top: 63px;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 63px;
+}
+
+.title-container h1 {
+  font-size: 31px;
+  font-family: "MontserratBold";
+}
+
+.title-container p {
+  font-size: 20px;
+  color: #ada9d5;
+  margin-top: 110px;
+}
+
+.reserver {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 38px;
+}
+
+.reserver input {
+  width: 759px;
+  height: 55px;
+  border: solid 3px #000000;
+}
+
+.reserver input::placeholder {
+  padding-left: 20px;
+  font-size: 21px;
+  color: #929292;
+}
+
+.reserver button {
+  width: 272px;
+  height: 55px;
+  border-radius: 3px;
+  border: solid 3px #bb1e4d;
+  background-color: #e61654;
+  margin-left: 69px;
+  font-size: 19px;
+  font-family: "MontserratBold";
+  color: #fff;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 257px;
+}
+
+.video-container iframe {
+    -webkit-box-shadow: 22px 22px 48px 13px rgba(0,0,0,0.75);
+    -moz-box-shadow: 22px 22px 48px 13px rgba(0,0,0,0.75);
+    box-shadow: 22px 22px 48px 13px rgba(0,0,0,0.75);
+}
+
+.reseau-container {
+  display: flex;
+  justify-content: center;
+  font-size: 22px;
+  color: #49497a;
+  margin-top: 62px;
+  align-items: center;
+}
+
+.reseau-container a {
+  margin-left: 45px;
+}

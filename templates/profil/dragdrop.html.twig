@@ -1,0 +1,118 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Admin
+{% endblock %}
+{% block stylesheets %}
+	{{parent()}}
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=yes">
+
+	<link href="/styles/dragdrop.css" rel="stylesheet">
+	<link rel="stylesheet" href="/fonts/fontawesome/css/all.css">
+
+{% endblock %}
+{% block body %}
+	{{parent()}}
+	<section class="section">
+		<div class="preview-container">
+			<div class="preview-list">
+				<div  class="preview-item">
+                <ul data-test="{{ path('dragdrop',{id:id}) }}" data-chapitre="{{id}}" class="sortable">
+					{% for page in pages %}
+
+						<li class="list-image" data-id-page="{{page.id}}" data-numero-page="{{page.numero}}" id="{{page.numero}}">
+							<img class="imgs"  data-id-page="{{page.id}}" data-numero-page="{{page.numero}}" src="{{ vich_uploader_asset(page,'imageFile')}}" alt="">
+						</li>
+					{% endfor %}
+                    </ul>
+				</div>
+			</div>
+		</div>
+    <button class="btn">envoyer</button>
+	</section>
+    {% if numeros is defined %}
+    {% for numero in numeros %}
+      <p>{{numero.img_ids}} </p> 
+    {% endfor %}
+    {% endif %}
+
+{% endblock %}
+
+    {% block javascripts %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" ></script>
+    <script src="//code.jquery.com/ui/1.10.3/jquery-ui.js" ></script>
+    <script defer>
+    $(document).ready(function() {
+    console.log("hahahaha")
+    $('.sortable').sortable({
+         tolerance: 'pointer', 
+         update : function(event,ui)
+        {
+            $(this).children().each(function (index) {
+                if($(this).attr("data-numero-page") != index +1) {
+                    $(this).attr("data-numero-page", (index+1)).addClass('updated')
+                }
+            });
+
+            var chapitre = $('.sortable').data("chapitre");
+            var img_numeros = new Array();
+            var img_ids =new Array();
+            var route = $('.sortable').data('test')
+            console.log(route);
+
+
+            console.log($('.list-image'))
+
+
+             $('.btn').click(function (e) {
+
+
+            $('.list-image').each(function() {
+                img_numeros.push($(this).data("numero-page"));
+                img_ids.push($(this).data("id-page"));
+                $(this).removeClass('updated');
+
+            });
+             
+
+
+                $.ajax({
+                url:route,
+                method:"POST",
+                data:{img_numeros:img_numeros ,img_ids:img_ids },
+                success:function(response)
+                {
+                    
+                    window.location.href = route
+                }
+            })
+            });
+            
+
+            /*
+            var chapitre = $('.sortable').data("chapitre")
+            var img_numeros = new Array();
+            var img_ids =new Array();
+
+
+
+            $(".list-image").each(function(index) {
+                img_numeros.push($(this).data("numero-page"));
+                img_ids.push($(this).data("id-page"));
+            //    if($(this).data("numero-page") != index + 1)
+            });
+             console.log(index)
+            $.ajax({
+                url:"{{path('dragdrop' , {id:"1"})}}",
+                method:"POST",
+                data:{img_numeros:img_numeros ,img_ids:img_ids },
+                success:function(data)
+                {
+                  
+                }
+            })
+            */
+        }
+        });
+});</script>
+     {% endblock %}

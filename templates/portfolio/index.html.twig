@@ -1,0 +1,153 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Portfolio UltraManga
+{% endblock %}
+{% block stylesheets %}
+	{{parent()}}
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=yes">
+	<link href="styles/portfolio.css" rel="stylesheet">
+	<link rel="stylesheet" href="fonts/fontawesome/css/all.css">
+	<script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js' defer></script>
+{% endblock %}
+{% block body %}
+	{{parent()}}
+	<section>
+		<div class="icone-container">
+			<div class="icone-list active">
+				<img src="assets/imagesStatic/edit-tools.png" alt="">
+				<p>Les créateurs</p>
+			</div>
+			<div class="icone-list">
+
+				<img src="assets/imagesStatic/tool.png" alt="">
+				<p>Les oeuvres</p>
+			</div>
+			<div class="icone-list">
+				<img src="assets/imagesStatic/user.png" alt="">
+				<p>Les offres</p>
+			</div>
+		</div>
+		<div class="create-portfolio-container">
+			<div class="create-left">
+				<h2>Tu voudrais proposer tes services ?</h2>
+				<p>Tu es dessinateur, coloriste, scénariste ou autres. 
+																																																																																																			Crée ton portfolio pour apparaitre dans la liste des services que 
+																																																																																																			tu peux rendre.</p>
+			</div>
+			<div class="create-right">
+				<h2>Tu cherches à agrandir ton équipe ?</h2>
+				<p>Tu es à la recherche d'un talent, d'une compétence ou autres.
+																																																																																											tu cherches à améliorer la qualité ou la quantité de ton œuvre.
+																																																																																											Cet outil a été crée pour que tu trouves ton bonheur.
+				</p>
+			</div>
+			<div class="create-center">
+				<a href="#">Créez votre portfolio gratuit</a>
+			</div>
+		</div>
+	</section>
+	<section>
+		<form class="search-bar" action="">
+			<input placeholder="Recherchez un porfolio ..." type="search" name="" id="">
+			<i class="fa fa-search"></i>
+		</form>
+		<div class="filter-container">
+			<p>Dessinateurs</p>
+			<p>Scénaristes</p>
+			<p>Coloristes</p>
+			<p>Autres</p>
+		</div>
+	</section>
+	<section>
+		<div class="portfolios-container">
+			<h1 class="main-title">Les portfolios</h1>
+			<div class="portfolios-list">
+				<div class="portfolio-item">
+					<div class="image-portfolio-container">
+						<img class="bg-image-profil" src="assets/imagesStatic/totorot.png" alt="">
+						<img class="image-profil" src="assets/imagesStatic/meuf.png" alt="">
+					</div>
+					<div class="portfolio-infos">
+						<h3>Roberto Carlos</h3>
+						<h4>Dessinateur</h4>
+						<p>Je suis Saza L-Cacahuete, l'auteure de Neko No  
+																																																													       Shi et de Welcome To Amazing World
+
+						</p>
+					</div>
+				</div>
+				<div class="portfolio-item">
+					<div class="image-portfolio-container">
+						<img class="bg-image-profil" src="assets/imagesStatic/totorot.png" alt="">
+						<img class="image-profil" src="assets/imagesStatic/meuf.png" alt="">
+					</div>
+					<div class="portfolio-infos">
+						<h3>Roberto Carlos</h3>
+						<h4>Dessinateur</h4>
+						<p>Je suis Saza L-Cacahuete, l'auteure de Neko No  
+																																																													       Shi et de Welcome To Amazing World
+
+						</p>
+					</div>
+				</div>
+				<div class="portfolio-item">
+					<div class="image-portfolio-container">
+						<img class="bg-image-profil" src="assets/imagesStatic/totorot.png" alt="">
+						<img class="image-profil" src="assets/imagesStatic/meuf.png" alt="">
+					</div>
+					<div class="portfolio-infos">
+						<h3>Roberto Carlos</h3>
+						<h4>Dessinateur</h4>
+						<p>Je suis Saza L-Cacahuete, l'auteure de Neko No  
+																																																													       Shi et de Welcome To Amazing World
+
+						</p>
+					</div>
+				</div>
+				<div class="portfolio-item">
+					<div class="image-portfolio-container">
+						<img class="bg-image-profil" src="assets/imagesStatic/totorot.png" alt="">
+						<img class="image-profil" src="assets/imagesStatic/meuf.png" alt="">
+					</div>
+					<div class="portfolio-infos">
+						<h3>Roberto Carlos</h3>
+						<h4>Dessinateur</h4>
+						<p>Je suis Saza L-Cacahuete, l'auteure de Neko No  
+																																																													       Shi et de Welcome To Amazing World
+
+						</p>
+					</div>
+				</div>
+				<div class="portfolio-item">
+					<div class="image-portfolio-container">
+						<img class="bg-image-profil" src="assets/imagesStatic/totorot.png" alt="">
+						<img class="image-profil" src="assets/imagesStatic/meuf.png" alt="">
+					</div>
+					<div class="portfolio-infos">
+						<h3>Roberto Carlos</h3>
+						<h4>Dessinateur</h4>
+						<p>Je suis Saza L-Cacahuete, l'auteure de Neko No  
+																																																													       Shi et de Welcome To Amazing World
+
+						</p>
+					</div>
+				</div>
+				<div class="portfolio-item">
+					<div class="image-portfolio-container">
+						<img class="bg-image-profil" src="assets/imagesStatic/totorot.png" alt="">
+						<img class="image-profil" src="assets/imagesStatic/meuf.png" alt="">
+					</div>
+					<div class="portfolio-infos">
+						<h3>Roberto Carlos</h3>
+						<h4>Dessinateur</h4>
+						<p>Je suis Saza L-Cacahuete, l'auteure de Neko No  
+																																																													       Shi et de Welcome To Amazing World
+
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}

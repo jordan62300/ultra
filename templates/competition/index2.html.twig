@@ -1,0 +1,199 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Competition UltraManga
+{% endblock %}
+{% block stylesheets %}
+	{{parent()}}
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=yes">
+
+	<link href="styles/competition.css" rel="stylesheet">
+	<link rel="stylesheet" href="fonts/fontawesome/css/all.css">
+	<script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js' defer></script>
+{% endblock %}
+{% block body %}
+	{{parent()}}
+	<section>
+		<div class="icone-container">
+			<div class="icone-list active">
+				<img src="/assets/imagesStatic/edit-tools.png" alt="">
+				<p>Cagnottes</p>
+			</div>
+			<div class="icone-list">
+
+				<img src="/assets/imagesStatic/tool.png" alt="">
+				<p>Compétition</p>
+			</div>
+			<div class="icone-list">
+				<img src="/assets/imagesStatic/user.png" alt="">
+				<p>Lecteurs</p>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="preview-container">
+			<div class="preview-list">
+				<div class="preview-item">
+					<h2>1</h2>
+					<img src="assets/imagesStatic/jojob.png" alt="">
+					<a class="preview-item-profil" href="">Voir profil</a>
+					<span class="ligne"></span>
+					<h5>Jojo bizzare adventure</h5>
+					<p>Boruto est le fils aîné de Naruto et d'Hinata. Il est également le grand frère d'Himawari, qu'il adore. Il fait équipe avec Sarada et Mitsuki. Son professeur est Konohamaru.
+					</p>
+					<div class="preview-action">
+						<a href="">Suivre</a>
+						<a href="">Partager</a>
+						<a href="">Telecharger</a>
+					</div>
+				</div>
+				<div class="preview-item preview-item2">
+					<h2 class="preview2">2</h2>
+					<img src="assets/imagesStatic/myhero.png" alt="">
+					<a class="preview-item-profil preview-profil2" href="">Voir profil</a>
+					<span class="ligne"></span>
+					<h5>Jojo bizzare adventure</h5>
+					<p>Boruto est le fils aîné de Naruto et d'Hinata. Il est également le grand frère d'Himawari, qu'il adore. Il fait équipe avec Sarada et Mitsuki. Son professeur est Konohamaru.
+					</p>
+					<div class="preview-action">
+						<a href="">Suivre</a>
+						<a href="">Partager</a>
+						<a href="">Telecharger</a>
+					</div>
+				</div>
+				<div class=" preview-item preview-item3">
+					<h2 class="preview2">3</h2>
+					<img src="assets/imagesStatic/yesyes.png" alt="">
+					<a class="preview-item-profil preview-profil2" href="">Voir profil</a>
+					<span class="ligne"></span>
+					<h5>Jojo bizzare adventure</h5>
+					<p>Boruto est le fils aîné de Naruto et d'Hinata. Il est également le grand frère d'Himawari, qu'il adore. Il fait équipe avec Sarada et Mitsuki. Son professeur est Konohamaru.
+					</p>
+					<div class="preview-action">
+						<a href="">Suivre</a>
+						<a href="">Partager</a>
+						<a href="">Telecharger</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container-classement">
+			<div class="info-classement">
+				<div class="form-container">
+					<form action="">
+						<input type="search">
+						<i class="fa fa-search"></i>
+					</form>
+				</div>
+				<div class="info-container">
+					<p class="createur-info">Createur</p>
+					<p class="score-info">Score</p>
+					<p class="grade-info">Niveau</p>
+				</div>
+			</div>
+			<div class="list-classement">
+				<div class="item-classement first">
+					<p class="rang">1er</p>
+					<img class="manga-img" src="assets/imagesStatic/heroAcademia.png" alt="">
+					<p class="nom">Boruto</p>
+					<p class="truc">
+						1
+					</p>
+					<img class="createur" src="assets/imagesStatic/profil.png" alt="">
+					<p class="score">25 526</p>
+					<img src="assets/imagesStatic/rang.png" alt="" class="grade">
+				</div>
+				<div class="item-classement second">
+					<p class="rang">1er</p>
+					<img class="manga-img" src="assets/imagesStatic/heroAcademia.png" alt="">
+					<p class="nom">Boruto</p>
+					<p class="truc">
+						1
+					</p>
+					<img class="createur " src="assets/imagesStatic/profil.png" alt="">
+					<p class="score">25 526</p>
+					<img src="assets/imagesStatic/rang.png" alt="" class="grade">
+				</div>
+				<div class="item-classement third">
+					<p class="rang">1er</p>
+					<img class="manga-img" src="assets/imagesStatic/heroAcademia.png" alt="">
+					<p class="nom">Boruto</p>
+					<p class="truc">
+						1
+					</p>
+					<img class="createur" src="assets/imagesStatic/profil.png" alt="">
+					<p class="score">25 526</p>
+					<img src="assets/imagesStatic/rang.png" alt="" class="grade">
+				</div>
+				<div class="item-classement ">
+					<p class="rang">1er</p>
+					<img class="manga-img" src="assets/imagesStatic/heroAcademia.png" alt="">
+					<p class="nom">Boruto</p>
+					<p class="truc">
+						1
+					</p>
+					<img class="createur" src="assets/imagesStatic/profil.png" alt="">
+					<p class="score">25 526</p>
+					<img src="assets/imagesStatic/rang.png" alt="" class="grade">
+				</div>
+				<div class="item-classement ">
+					<p class="rang">1er</p>
+					<img class="manga-img" src="assets/imagesStatic/heroAcademia.png" alt="">
+					<p class="nom">Boruto</p>
+					<p class="truc">
+						1
+					</p>
+					<img class="createur" src="assets/imagesStatic/profil.png" alt="">
+					<p class="score">25 526</p>
+					<img src="assets/imagesStatic/rang.png" alt="" class="grade">
+				</div>
+				<div class="item-classement ">
+					<p class="rang">1er</p>
+					<img class="manga-img" src="assets/imagesStatic/heroAcademia.png" alt="">
+					<p class="nom">Boruto</p>
+					<p class="truc">
+						1
+					</p>
+					<img class="createur" src="assets/imagesStatic/profil.png" alt="">
+					<p class="score">25 526</p>
+					<img src="assets/imagesStatic/rang.png" alt="" class="grade">
+				</div>
+				<div class="item-classement ">
+					<p class="rang">1er</p>
+					<img class="manga-img" src="assets/imagesStatic/heroAcademia.png" alt="">
+					<p class="nom">Boruto</p>
+					<p class="truc">
+						1
+					</p>
+					<img class="createur" src="assets/imagesStatic/profil.png" alt="">
+					<p class="score">25 526</p>
+					<img src="assets/imagesStatic/rang.png" alt="" class="grade">
+				</div>
+				<div class="item-classement ">
+					<p class="rang">1er</p>
+					<img class="manga-img" src="assets/imagesStatic/heroAcademia.png" alt="">
+					<p class="nom">Boruto</p>
+					<p class="truc">
+						1
+					</p>
+					<img class="createur" src="assets/imagesStatic/profil.png" alt="">
+					<p class="score">25 526</p>
+					<img src="assets/imagesStatic/rang.png" alt="" class="grade">
+				</div>
+				<div class="item-classement ">
+					<p class="rang">1er</p>
+					<img class="manga-img" src="assets/imagesStatic/heroAcademia.png" alt="">
+					<p class="nom">Boruto</p>
+					<p class="truc">
+						1
+					</p>
+					<img class="createur" src="assets/imagesStatic/profil.png" alt="">
+					<p class="score">25 526</p>
+					<img src="assets/imagesStatic/rang.png" alt="" class="grade">
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}

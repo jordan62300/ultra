@@ -1,0 +1,301 @@
+body {
+  background-color: #0c0c11;
+  color: #fff;
+  box-sizing: border-box;
+  font-family: "MontserratMedium";
+}
+
+section {
+  margin-left: 238px;
+}
+
+img {
+  cursor: pointer;
+}
+
+.container-info {
+  width: 1534px;
+  height: 626px;
+  margin-left: 78px;
+  margin-top: 74px;
+  margin-right: 74px;
+  margin-bottom: 77px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.info-image {
+  width: 400px;
+  height: 611px;
+  position: relative;
+}
+
+.info-image .main-img {
+  width: 400px;
+  height: 611px;
+}
+
+.lecture-img {
+  position: absolute;
+  z-index: 2;
+  top:211px;
+  left: 172px;
+  width: 87px;
+  height: 78px;
+}
+
+.lecture {
+  font-size: 44px;
+  font-family: "MontserratBold";
+  position: absolute;
+  top:330px;
+  left: 112px;
+}
+
+.suivre {
+top: 562px;
+left: 81px;
+z-index: 2;
+position: absolute;
+font-size: 20px;
+font-family: "MontserratBold";
+}
+
+.partager{
+right:99px;
+top:562px;
+z-index: 2;
+position: absolute;
+font-size: 20px;
+font-family: "MontserratBold";
+}
+
+.info-container {
+  width: 1112px;
+  height: 211px;
+  background-color: #11101d;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title h1 {
+  font-size: 36px;
+  font-family: "MontserratSemiBold";
+  margin-left: 24px;
+  margin-top: 15px;
+}
+
+.title p {
+  font-size: 13px;
+  margin-top: 29px;
+  margin-right: 59px;
+}
+
+.description {
+  margin-right: 58px;
+  margin-left: 23px;
+  margin-top: 21px;
+  margin-bottom: 42px;
+}
+
+.description p {
+  color: #c1b6b6;
+
+  font-size: 17px;
+}
+
+.info-stats {
+  display: flex;
+  align-items: center;
+  font-family: "MontserratSemiBold";
+  font-size: 12px;
+}
+
+.cagnotte-stats {
+  border-right: 1px solid #24214a;
+  display: flex;
+  align-items: center;
+  padding: 0px 18px;
+}
+
+.cagnotte {
+  height: 49px;
+  display: flex;
+  align-items: center;
+}
+
+.cagnotte-stat {
+  font-size: 21px;
+  color: #e40d4f;
+  font-family: "MontserratBold";
+}
+
+.ieme {
+  font-size: 10px;
+  color: #e40d4f;
+  font-family: "MontserratBold";
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.niveau-stats {
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #24214a;
+  padding: 0px 18px;
+}
+
+.niveau-stats p {
+  margin-left: 15px;
+}
+
+.niveau-stats img {
+  width: 43px;
+  height: 43px;
+}
+
+.soutiens-stats {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  padding: 0px 18px;
+}
+
+.soutien-stat {
+  font-size: 21px;
+  color: #e40d4f;
+  font-family: "MontserratBold";
+  margin-right: 20px;
+}
+
+/* INFO SOUTIEN */
+
+.info-soutien {
+  width: 1112px;
+  height: 400px;
+  background-color: #040407;
+}
+
+.soutien-barre-container {
+  margin-top: 48px;
+  margin-left: 40px;
+  display: flex;
+}
+
+.dark-barre {
+  width: 818px;
+  height: 42px;
+  background-color: #240412;
+}
+
+.light-barre {
+    width: 583px;
+    height: 42px;
+    background-color: #E61654;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.light-barre p {
+    font-family: "MontserratBold";
+    font-size: 20px;
+    margin-right: 14px;
+}
+
+.soutien-barre-container a {
+    margin-left: 33px;
+    padding: 13px 50px;
+    background-color:#E61654;
+    border-radius: 2px;
+    font-size: 13px;
+    font-family: "MontserratBold";
+}
+
+
+.schema-container{
+display: flex;
+margin-top: 54px;
+}
+
+.schema-list{
+display: flex;
+}
+
+.schema-item{
+  width: 181px;
+  height: 209px;
+  margin-left: 40px;
+}
+
+.schema-item:nth-child(n+2){
+  margin-left: 32px;
+}
+
+.schema-bg-item{
+    width: 181px;
+    height: 160px;
+    background-color: #1F1D32;
+    border-radius: 10px;
+
+}
+
+.item-niveau{
+display: flex;
+justify-content: space-between;
+}
+
+.item-niveau img:nth-child(1) {
+  width: 28px;
+  height: 28px;
+  margin-top: 3px;
+  margin-left: 6px;
+}
+
+.item-niveau img:nth-child(2) {
+  width: 18px;
+  height: 18px;
+  margin-top: 8px;
+  margin-right: 12px;
+}
+
+.illustator-img-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px 0px;
+}
+
+.illustator-img-container img {
+  width: 58px;
+  height: 58px;
+}
+
+.illustator-img-container p{
+margin-top: 15px;
+font-size: 9px;
+}
+
+.schema-barre{
+  display: flex;
+  justify-content: center;
+  height: 8px;
+  width: 181px;
+  background-color: #E61654;;
+  margin-top: 19px;
+  margin-bottom: 7px;
+
+}
+
+.schema-soutiens{
+  display: flex;
+  justify-content: center;
+  font-family: "MontserratSemiBold";
+  font-size: 16px;
+  width: 181px
+}

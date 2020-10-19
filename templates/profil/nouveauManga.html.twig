@@ -1,0 +1,12 @@
+<h1>Ajouter un mangas</h1>
+
+{{ form(mangaForm)}}
+
+<h2>vos Mangas</h2>
+
+ {% for manga in mangas %} 
+
+ <h2>{{ manga.nom}}</h2>
+ <p>{{manga.fileName}}</p>
+     
+ {% endfor %}

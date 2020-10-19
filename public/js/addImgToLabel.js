@@ -1,0 +1,1 @@
+$('.label').html("<img class='label_img' src='/assets/imagesStatic/add.png'>")

@@ -1,0 +1,232 @@
+body {
+    background-color: #0c0c11;
+    color:#fff;
+    font-family: "MontserratMedium";
+  }
+  
+  .container {
+  }
+  
+  section,
+  header {
+    margin-left: 238px;
+  }
+  
+  header {
+    margin-top: 125px;
+  }
+  
+  img {
+    cursor: pointer;
+  }
+
+.vertical-line-pink{
+    background-color: #E51653;
+    width: 100%;
+    height: 23px;
+    margin-top: 141px;
+}
+
+.vertical-line-blue{
+    background-color:#1E1936;
+    width: 100%;
+    height: 23px;
+    margin-top: 11px;
+}
+
+.manga-info-container{
+    display: flex;
+    width: 1379px;
+    height: 477px;
+    background-color: #141121;
+}
+
+.image-info-container{
+    width:226px ;
+    height: 340px;
+    margin-left: 123px;
+    margin-top: 88px;
+}
+
+.image-info-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.description-info-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 94px;
+    margin-left: 57px;
+}
+
+.description-info-container h1 {
+    font-size: 27px;
+    font-family: "MontserratBold";
+}
+
+.description-info-container p:nth-child(2){
+    color:#7D7D7D;
+    margin: 14px 0px;
+    font-size: 18px;
+}
+
+.description-info-container p:nth-child(3){
+    color:#fff;
+    margin: 14px 0px;
+    font-size: 16px;
+    font-family: "MontserratBold";
+}
+
+.description-info-container p:nth-child(4){
+    color:#fff;
+    margin: 14px 0px;
+    font-size: 18px;
+}
+
+.description-btn-container{
+    margin-top: 76px;
+    margin-bottom: 49px;
+}
+
+.description-btn-container a {
+    background-color: #292D4D;
+    font-size: 17px;
+    padding: 9px 33px;
+}
+
+.description-btn-container a:nth-child(2){
+    margin-left: 19px;
+}
+
+.soutien-barre-container {
+    display: flex;
+    
+}
+
+.soutien-barre{
+    display: flex;
+    width: 714px;
+    height: 42px;
+    position: relative;
+    background-color: #240412;
+    margin-right: 44px;
+}
+
+.soutien-number{
+    position: absolute;
+    top:35%;
+    left:40%;
+}
+
+.soutien-barre-pink{
+    width: 50%;
+    height: 100%;
+    background-color: #E51653;
+}
+
+.soutien-barre-container a {
+    background-color: #E51653;
+    padding: 11px;
+}
+
+/* SECTION CLASSEMENT */
+
+.classement-manga-container{
+    width: 1379px;
+    background-color: #0F0D17;
+}
+
+.classement-manga-list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.manga-indication{
+    display: flex;
+    font-size: 12px;
+    color: #707070;
+    padding:18px 0px;
+    position: relative;
+}
+
+
+.manga-indication p:nth-child(1) {
+    position: absolute;
+    left: 34px;
+}
+
+.manga-indication p:nth-child(2) {
+    position: absolute;
+    left: 169px;
+}
+
+.manga-indication p:nth-child(3) {
+    position: absolute;
+    left: 465px
+}
+
+.manga-indication p:nth-child(4) {
+    position: absolute;
+    left: 740px
+}
+
+.manga-indication p:nth-child(5) {
+    position: absolute;
+    left: 1073px
+}
+
+.manga-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #0F0D17;
+    width: 100%;
+    height: 48px;
+    border-bottom: 1px solid #231D3D;
+    border-top: 1px solid #231D3D;
+}
+
+.manga-item .rang {
+    position: absolute;
+    left: 34px;
+    
+}
+
+.manga-item .nom {
+    position: absolute;
+    left: 169px;
+    font-size: 18px;
+}
+
+.auteur {
+    display: flex;
+    position: absolute;
+    left: 465px;
+    align-items:center;
+}
+
+.auteur p {
+    font-size: 13px;
+    margin-left: 34px;
+}
+
+.manga-item .etape {
+    position: absolute;
+    left: 740px
+}
+
+.manga-item .soutien{
+    position: absolute;
+    left: 1073px;
+    font-size: 19px;
+}
+
+
+.auteur img {
+    width: 28px;
+    height: 28px;
+    border-radius: 90px;
+}
+  

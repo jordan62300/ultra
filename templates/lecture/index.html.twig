@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			{% block title %}Lecture
+			{% endblock %}
+		</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" defer></script>
+		<script src="/js/turnImage.js" defer></script>
+		<script src="/js/likeChapitre.js" defer></script>
+		{% block stylesheets %}
+
+			<link rel="stylesheet" href="/styles/fonts.css">
+			<link rel="stylesheet" href="/styles/lecture.css">
+			<link rel="stylesheet" href="/fonts/fontawesome/css/all.css">
+		{% endblock %}
+	</head>
+	<body>
+		<i class="fas fa-chevron-left btn-remove"></i>
+		<section class="page-reader">
+
+			{% block body %}
+				<div data-page="{{numero}}" data-chapitre="{{chapitre}}" class="page-container">
+					{% for page in pages %}
+
+
+						<img class="page" src="{{ vich_uploader_asset(page,'imageFile')}}" alt="">
+
+					{% endfor %}
+				</div>
+			{% endblock %}
+		</section>
+		<i class="fas fa-chevron-right btn-next"></i>
+		<section class="commentaire-section">
+			<div class="options-container">
+				<div class="follow-links">
+					<div class="like-chapitre-container">
+						<i data-like="{{chapitreLiked.isLiked}}" class=" fas fa-heart like"></i>
+						<span class="likeDescription" >Likez l'épisode</span>
+					</div>
+					<div class="soutien-chapitre-container">
+						<p>
+							<span>{{soutiens}}</span>
+							soutiens</p>
+						<span class="soutien">Participez a la cagnotte</span>
+					</div>
+					<div class="share-chapitre-container">
+						<i data-share="{{chapitreLiked.isShared}}" class=" fas fa-share-alt share" ></i>
+						<span class="shareDescription">Partagez</span>
+					</div>
+				</div>
+				<div class="next-episode">
+					<p>Episode suivant</p>
+				</div>
+			</div>
+			<div>
+				{{ form(commentaireForm)}}
+				</div>
+			</div>
+			<div class="commentaire-toolbar">
+				<div class="nombre-commentaire-container">
+					<p>{{numberOfComment}} Commentaires</p>
+				</div>
+				<div class="trier-container">
+					<p>trier par</p>
+				</div>
+			</div>
+			<div class="commentaire-container">
+				<div class="commentaire-list">
+					{% for key,commentaireChapitre in commentaireChapitres %}
+
+
+						<div class="commentaire-item">
+							<div class="commentaire-info">
+								<div class="left-info">
+									<img class="img-profil" src="/assets/imagesStatic/meuf.png" alt="">
+									<p class="pseudo">{{commentaireChapitre.user.username}}</p>
+								</div>
+								<div class="right-info">
+
+									<p class="posted_at">{{commentaireChapitre.createdAt|date("d/m/Y", "Europe/Paris")}}</p>
+								</div>
+							</div>
+							<div class="commentaire-content">
+								<p class="content">{{commentaireChapitre.commentaire}}</p>
+							</div>
+							<div class="commentaire-links">
+								<span {% if userCommentaireChapitres[key].id is defined %} data-like="{{userCommentaireChapitres[key].isLiked}}" {% endif %} data-commentaire="{{commentaireChapitre.id}}" class="likeCom">
+									<i class="fas fa-heart">
+										{{commentaireChapitre.likeNumber}}</i>
+								</span>
+								<span {% if userCommentaireChapitres[key].id is defined %} data-share="{{userCommentaireChapitres[key].isShared}}" {% endif %} data-commentaire="{{commentaireChapitre.id}}" class="shareCom">
+									<i class="fas fa-share-alt"> {{commentaireChapitre.shareNumber}}</i>
+								</span>
+							</div>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

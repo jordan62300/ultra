@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Admin{% endblock %}
+{% block stylesheets %}
+{{parent()}}
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=yes">
+
+	<link href="/styles/admin.css" rel="stylesheet">
+	<link rel="stylesheet" href="/fonts/fontawesome/css/all.css">
+	<script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js' defer></script>
+{% endblock %}
+{% block body %}
+	{{parent()}}
+<section>
+		<div class="preview-container">
+			<div class="preview-list">
+				<div class="preview-item">
+                    
+               
+					<img src="{{ vich_uploader_asset(manga,'imageFile')}}" alt="">
+					<span class="ligne"></span>
+					<h5>{{manga.nom}}</h5>
+					<p>{{manga.description}}</p>
+					<div class="preview-action">
+						<p class="type">Type : {{manga.type}}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		{{ form(form)}}
+
+	</section>
+{% endblock %}

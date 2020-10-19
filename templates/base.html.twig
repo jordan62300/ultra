@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			{% block title %}Welcome!
+			{% endblock %}
+		</title>
+		{% block stylesheets %}
+			<link rel="stylesheet" href="/styles/fonts.css">
+			<link rel="stylesheet" href="/styles/navbar.css">
+		{% endblock %}
+	</head>
+	<body>
+		{% block body %}
+			<nav>
+				<div class="nav-container">
+					<div class="logo-container">
+						<a href="{{ path('home') }}"><img src="/assets/imagesStatic/UltraMangaLogo.png"></a>
+					</div>
+					<div class="line"></div>
+					<!--
+																																			<div class="img-profil-container">
+																																				<img class="profil" src="assets/imagesStatic/profil.png"/>
+																																			</div>
+																																			-->
+					<div class="side-menu-container">
+						<ul>
+							<li class="home">
+								<a href="{{ path('home') }}">Home</a>
+							</li>
+							<li class="navmenu">
+								<a href="{{ path('competition') }}">Compétition</a>
+							</li>
+							<li class="navmenu">
+								<a href="{{ path('portfolio') }}">La communauté</a>
+							</li>
+							<li class="navmenu">
+								<a href="/mangakainfo">Le concept</a>
+							</li>
+						</ul>
+					</div>
+					{% if app.user %}
+					<div class="icon-container">
+						<div class="container-img">
+							<img class="icone-menu" src="/assets/imagesStatic/publier.png"/>
+						</div>
+						<div class="container-img">
+							<img class="icone-menu" src="/assets/imagesStatic/monprofil.png"/>
+						</div>
+						<div class="container-img">
+							<img class="icone-menu" src="/assets/imagesStatic/ultra.png"/>
+						</div>
+						<div class="container-img">
+							<img class="icone-menu last-icone-menu" src="/assets/imagesStatic/message.png"/>
+						</div>
+					</div>
+					{% endif %}
+					{% if app.user %}
+
+						{% else %}
+							<div class="login-container">
+								<a class="connexion" href="{{ path('connexion') }}">SE CONNECTER</a>
+								<a class="inscription" href="{{ path('inscription') }}">S'INSCRIRE</a>
+							</div>
+					{% endif %}
+
+					<div class="reseau-container">
+						<div class="icone-reseau-container">
+							<i class=" icone-reseau youtube fab fa-youtube"></i>
+							<!--	<img class="icone-reseau facebook" src="/assets/imagesStatic/facebook.png"/> -->
+						</div>
+						<div class="icone-reseau-container">
+							<img class="icone-reseau twitter" src="/assets/imagesStatic/twitter.png"/>
+						</div>
+						<div class="icone-first icone-reseau-container">
+							<img class="icone-reseau insta" src="/assets/imagesStatic/insta.png"/>
+						</div>
+						<div class="icone-reseau-container">
+							<img class="icone-reseau facebook" src="/assets/imagesStatic/facebook.png"/>
+						</div>
+					</div>
+					
+					</div>
+				</nav>
+			{% endblock %}
+			{% block javascripts %}{% endblock %}
+		</body>
+	</body>
+</html>

@@ -1,0 +1,80 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Log in!
+{% endblock %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" href="/styles/fonts.css">
+	<link href="/styles/connexion.css" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+
+	{% if error %}
+		<div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+	{% endif %}
+
+	{% if app.user %}
+		<div class="mb-3">
+			You are logged in as
+			{{ app.user.username }},
+			<a href="{{ path('deconnexion') }}">Logout</a>
+		</div>
+	{% endif %}
+	<div class="container">
+		<div class="form-container">
+			<div class="logo-container">
+				<img class="logo" src="assets/imagesStatic/UltraMangaLogo.png" alt="logo ultra manga">
+			</div>
+            <div class="menu">
+            <a class="login" href="{{ path('connexion') }}">SE CONNECTER</a>
+            <a class="register" href="{{ path('inscription') }}">S'INSCRIRE</a>
+            </div>
+			<form method="post">
+				<div class="input-container">
+					<label class="form__label" for="inputUsername">PSEUDO</label>
+					<input class="form__field pseudo" type="text" value="{{ last_username }}" name="username" id="inputUsername" class="form-control" required autofocus>
+				</div>
+				<div class="input-container">
+					<label class="form__label" for="inputPassword">MOT DE PASSE</label>
+					<input type="password" name="password" id="inputPassword" class="form-control mdp" required>
+				</div>
+
+				<input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+				<button class="btn btn-lg btn-primary" type="submit">
+					SE CONNECTER
+				</button>
+                <a class="reset" href="">Vous avez oublié le mot de passe ? </a>
+			</form>
+		</div>
+	</div>
+	{#
+							        Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
+							        See https://symfony.com/doc/current/security/remember_me.html
+							
+							        <div class="checkbox mb-3">
+							            <label>
+							                <input type="checkbox" name="_remember_me"> Remember me
+							            </label>
+							        </div>
+							    #}
+
+
+	<!--
+		    <div class="box">
+			<form>
+				<span class="text-center">Pseudo</span>
+			<div class="input-container">
+				<input type="text" type="text" value="{{ last_username }}" name="username" id="inputUsername" class="form-control" required autofocus/>
+				<label for="inputUsername">Pseudo</label>	
+			</div>
+			<div class="input-container">		
+				<input type="password" name="password" id="inputPassword" class="form-control" required/>
+				<label class="form__label" for="inputPassword">Mot de passe</label>
+			</div>
+		    <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+				<button type="submit" class="btn">submit</button>
+		</form>	
+		</div>
+		-->
+{% endblock %}

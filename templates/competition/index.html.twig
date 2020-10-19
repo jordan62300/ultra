@@ -1,0 +1,74 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Competition UltraManga
+{% endblock %}
+{% block stylesheets %}
+	{{parent()}}
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=yes">
+
+	<link href="styles/competition2.css" rel="stylesheet">
+	<link rel="stylesheet" href="fonts/fontawesome/css/all.css">
+	<script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js' defer></script>
+{% endblock %}
+{% block body %}
+	{{parent()}}
+	<section>
+		<div class="vertical-line-pink"></div>
+		<div class="vertical-line-blue"></div>
+		<div class="manga-info-container">
+			<div class="image-info-container"><img src="assets/imagesStatic/mha.png" alt=""></div>
+			<div class="description-info-container">
+				<h1>Jojo's bizarre adventure</h1>
+				<p>2020 -  187 chapitres  - en cours</p>
+				<p>By : Ce bon vieux coon</p>
+				<p>Dernier chapitre : 2 janvier 2021</p>
+				<div class="description-btn-container">
+					<a class="plus-info-btn" href="">Plus d'info</a>
+					<a class="share-btn" href="">Partager</a>
+				</div>
+				<div class="soutien-barre-container">
+					<div class="soutien-barre">
+						<p class="soutien-number">1 002 / 2000</p>
+						<div class="soutien-barre-pink"></div>
+					</div>
+                    <a href="">Offrir mon soutien</a>
+				</div>
+			</div>
+		</div>
+	</section>
+    <section>
+        <div class="classement-manga-container">
+            <div class="classement-manga-list">
+                <div class="manga-indication">
+                <p>rang</p>
+                <p>manga</p>
+                <p>auteur</p>
+                <p>étapes</p>
+                <p>soutiens</p>
+                </div>
+                <div class="manga-item">
+                    <div class="rang"><p>1er</p></div>
+                    <p class="nom">My hero académia</p>
+                    <div class="auteur"><img src="assets/imagesStatic/profil.png" alt=""> <p>Inspecteur-colombin</p></div> 
+                    <img class="etape" src="assets/imagesStatic/etape4.png" alt="">
+                    <p class="soutien">1 002</p>
+                </div>
+                <div class="manga-item">
+                    <div class="rang"><p>1er</p></div>
+                    <p class="nom">My hero académia</p>
+                    <div class="auteur"><img src="assets/imagesStatic/profil.png" alt=""> <p>Inspecteur-colombin</p></div> 
+                    <img class="etape" src="assets/imagesStatic/etape4.png" alt="">
+                    <p class="soutien">1 002</p>
+                </div>
+                <div class="manga-item">
+                    <div class="rang"><p>1er</p></div>
+                    <p class="nom">My hero académia</p>
+                    <div class="auteur"><img src="assets/imagesStatic/profil.png" alt=""> <p>Inspecteur-colombin</p></div> 
+                    <img class="etape" src="assets/imagesStatic/etape4.png" alt="">
+                    <p class="soutien">1 002</p>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

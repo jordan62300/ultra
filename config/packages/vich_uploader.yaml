@@ -1,0 +1,21 @@
+vich_uploader:
+    db_driver: orm
+
+
+    mappings:
+        manga_image:
+            uri_prefix: /images/mangas
+            upload_destination: '%kernel.project_dir%/public/images/mangas'
+        manga_image_vitrine_une:
+            uri_prefix: /images/mangas/vitrineUne
+            upload_destination: '%kernel.project_dir%/public/images/mangas/vitrineUne'
+        chapitre_image:
+            uri_prefix: /images/chapitres
+            upload_destination: '%kernel.project_dir%/public/images/chapitres'
+        page_image:
+            uri_prefix: /images/pages
+            upload_destination: '%kernel.project_dir%/public/images/pages'
+    #mappings:
+    #    products:
+    #        uri_prefix: /images/products
+    #        upload_destination: '%kernel.project_dir%/public/images/products'

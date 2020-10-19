@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+nav {
+  grid-column: 1 / span 1;
+  background-color: #12122b;
+  min-width: 238px;
+  max-width: 238px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.logo-container {
+  margin-top: 30%;
+}
+
+.logo-container img {
+  width: 143px;
+  height: 43px;
+}
+
+.img-profil-container {
+  margin-top: 0%;
+  width: 96px;
+  height: 96px;
+  border: #eeff00 3px solid;
+  border-radius: 50%;
+}
+
+.side-menu-container {
+  margin-top: -9px;
+}
+
+.home {
+  margin-top: 53px;
+}
+
+.navmenu {
+  margin-top: 50px;
+}
+
+.side-menu-container ul li a {
+  font-size: 13px;
+  font-family: "MontserratBold";
+}
+
+.icone-first {
+  
+}
+
+.reseau-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.icone-reseau-container {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16.8%;
+}
+
+.icone-reseau.insta {
+  width: 20px;
+  height: 20px;
+}
+
+.icone-reseau.twitter {
+  width: 23px;
+  height: 19px;
+}
+
+.icone-reseau.facebook {
+  width: 10px;
+  height: 22px;
+}
+
+.fa-youtube {
+  font-size: 28px;
+  color: #373a48;
+}
+
+.fa-youtube:hover {
+  cursor: pointer;
+  color: #ff0000;
+}
+
+.icon-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 139px;
+  margin-bottom: 60px;
+  
+}
+
+.container-img {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container-img p {
+    font-size: 9px;
+    font-family: "MontserratBold";
+    color: #FFFFFF;
+    margin-top: 12px;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.connexion {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 216px;
+  height: 40px;
+  background-color: #272224;
+  margin-top: 40px;
+  margin-bottom: 7px;
+  font-family: "MontserratBold";
+  font-size: 11px;
+}
+
+.inscription {
+  display: flex;
+  align-items: center;
+  width: 216px;
+  height: 40px;
+  background-color: #0c0c11;
+  justify-content: center;
+  font-family: "MontserratBold";
+  font-size: 11px;
+  margin-bottom: 17px;
+}
+
+.icone-menu {
+    margin-bottom: 16px;
+}
+
+.last-icone-menu{
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    display: none;
+  }
+  .logo-container {
+    margin-top: 10%;
+  }
+
+  .side-menu-container {
+    margin-top: 5%;
+  }
+
+  .side-menu-container ul li {
+    margin-top: 34%;
+  }
+}

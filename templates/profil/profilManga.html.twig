@@ -1,0 +1,153 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!
+{% endblock %}
+{% block stylesheets %}
+	{{parent()}}
+	<link href="styles/profilManga.css" rel="stylesheet">
+	<link rel="stylesheet" href="fonts/fontawesome/css/all.css">
+
+{% endblock %}
+
+{% block body %}
+	{{parent()}}
+	<section>
+		<div class="container-info">
+			<div class="info-image">
+				<img class="main-img" src="assets/imagesStatic/myheroportrait.png" alt="">
+				<img class="lecture-img" src="assets/imagesStatic/lecture.png" alt="">
+				<a class="lecture" href="">Lecture</a>
+				<a class="suivre" href="">suivre</a>
+				<a class="partager" href="">partager</a>
+			</div>
+
+			<div class="info-container">
+				<div class="title">
+					<h1>My Hero Academia</h1>
+					<p class="info-categorie">Action/Aventure</p>
+				</div>
+				<div class="description">
+					<p>Boruto est le fils aîné de Naruto et d'Hinata. Il est également le grand frère d'Himawari, qu'il adore. Il fait équipe avec Sarada et Mitsuki. Son professeur est Konohamaru.Boruto est le fils aîné de Naruto et d'Hinata.
+					</p>
+				</div>
+				<div class="info-stats">
+					<div class="cagnotte-stats">
+						<p class="cagnotte">
+							<span class="cagnotte-stat">2</span>
+							<span class="ieme">e</span>
+							MEILLEUR CAGNOTTE</p>
+					</div>
+					<div class="niveau-stats"><img src="assets/imagesStatic/niveau1.png" alt="">
+						<p>NIVEAU ACTUEL</p>
+					</div>
+					<div class="soutiens-stats">
+						<p class="soutien">
+							<span class="soutien-stat">184</span>
+							SOUTIENS</p>
+					</div>
+				</div>
+
+			</div>
+			<div class="info-soutien">
+				<div class="soutien-barre-container">
+					<div class="dark-barre">
+						<div class="light-barre">
+							<p>
+								232/250</p>
+						</div>
+					</div>
+					<a href="{{ path('paiement')}}">PARTICIPER</a>
+				</div>
+				<div class="schema-container">
+					<div class="schema-list">
+						<div class="schema-item">
+							<div class="schema-bg-item">
+								<div class="item-niveau">
+									<img src="assets/imagesStatic/niveau1.png" alt="icone-niveau">
+									<img src="assets/imagesStatic/validex2.png" alt="icone-validation">
+								</div>
+								<div class="illustator-img-container">
+									<img src="assets/imagesStatic/illustator.png" alt="">
+									<p>Une publication par mois</p>
+								</div>
+
+							</div>
+							<div class="schema-barre"></div>
+							<p class="schema-soutiens">
+								100 soutiens
+							</p>
+						</div>
+						<div class="schema-item">
+							<div class="schema-bg-item">
+								<div class="item-niveau">
+									<img src="assets/imagesStatic/niveau1.png" alt="icone-niveau">
+									<img src="assets/imagesStatic/validex2.png" alt="icone-validation">
+								</div>
+								<div class="illustator-img-container">
+									<img src="assets/imagesStatic/illustator.png" alt="">
+									<p>Une publication par mois</p>
+								</div>
+
+							</div>
+							<div class="schema-barre"></div>
+							<p class="schema-soutiens">
+								100 soutiens
+							</p>
+						</div>
+						<div class="schema-item">
+							<div class="schema-bg-item">
+								<div class="item-niveau">
+									<img src="assets/imagesStatic/niveau1.png" alt="icone-niveau">
+									<img src="assets/imagesStatic/validex2.png" alt="icone-validation">
+								</div>
+								<div class="illustator-img-container">
+									<img src="assets/imagesStatic/illustator.png" alt="">
+									<p>Une publication par mois</p>
+								</div>
+
+							</div>
+							<div class="schema-barre"></div>
+							<p class="schema-soutiens">
+								100 soutiens
+							</p>
+						</div>
+						<div class="schema-item">
+							<div class="schema-bg-item">
+								<div class="item-niveau">
+									<img src="assets/imagesStatic/niveau1.png" alt="icone-niveau">
+									<img src="assets/imagesStatic/validex2.png" alt="icone-validation">
+								</div>
+								<div class="illustator-img-container">
+									<img src="assets/imagesStatic/illustator.png" alt="">
+									<p>Une publication par mois</p>
+								</div>
+
+							</div>
+							<div class="schema-barre"></div>
+							<p class="schema-soutiens">
+								100 soutiens
+							</p>
+						</div>
+						<div class="schema-item">
+							<div class="schema-bg-item">
+								<div class="item-niveau">
+									<img src="assets/imagesStatic/niveau1.png" alt="icone-niveau">
+									<img src="assets/imagesStatic/validex2.png" alt="icone-validation">
+								</div>
+								<div class="illustator-img-container">
+									<img src="assets/imagesStatic/illustator.png" alt="">
+									<p>Une publication par mois</p>
+								</div>
+
+							</div>
+							<div class="schema-barre"></div>
+							<p class="schema-soutiens">
+								100 soutiens
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}

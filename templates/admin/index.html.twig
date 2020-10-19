@@ -1,0 +1,71 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Admin{% endblock %}
+{% block stylesheets %}
+{{parent()}}
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1, user-scalable=yes">
+
+	<link href="/styles/admin.css" rel="stylesheet">
+	<link rel="stylesheet" href="fonts/fontawesome/css/all.css">
+	<script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js' defer></script>
+{% endblock %}
+{% block body %}
+	{{parent()}}
+<section>
+		<div class="preview-container">
+			<div class="preview-list">
+                {% for manga in mangas %}
+				<div class="preview-item">
+                    
+               
+					<img src="{{ vich_uploader_asset(manga,'imageFile')}}" alt="">
+					<a class="preview-profil1" href="{{ path('admin_edit_manga' , {'id': manga.id}) }}">Administer</a>
+					<span class="ligne"></span>
+					<h5>{{manga.nom}}</h5>
+					<p>{{manga.description}}</p>
+					<div class="preview-action">
+						<p class="type">Type : {{manga.type}}</p>
+					</div>
+				</div>
+                 {% endfor %}
+			</div>
+		</div>
+</section>
+<section>
+		<div class="preview-container">
+			<div class="preview-list">
+                {% for chapitre in chapitres %}
+				<div class="preview-item">
+                    
+               
+					<img src="{{ vich_uploader_asset(chapitre,'imageFile')}}" alt="">
+					<a class="preview-profil1" href="{{ path('admin_edit_chapitre' , {'id': chapitre.id}) }}">Administer</a>
+					<span class="ligne"></span>
+					<h5>{{chapitre.nom}}</h5>
+					<div class="preview-action">
+						<p class="type">Type : Chapitre </p>
+					</div>
+				</div>
+                 {% endfor %}
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="preview-container">
+			<div class="preview-list">
+                {% for page in pages %}
+				<div class="preview-item">
+                    
+               
+					<img src="{{ vich_uploader_asset(page,'imageFile')}}" alt="">
+					<a class="preview-profil1" href="{{ path('admin_edit_page' , {'id': page.id}) }}">Administer</a>
+					<div class="preview-action">
+						<p class="type">Type : Page </p>
+					</div>
+				</div>
+                 {% endfor %}
+			</div>
+		</div>
+	</section>
+{% endblock %}

@@ -1,0 +1,19 @@
+- Login FAIT
+- inscription FAIT
+- deconnexion FAIT
+- ajout Manga FAIT
+- ajout Chapitre FAIT
+- ajout Page    FAIT  
+- Réorganisation page FAIT
+- multipage A voir
+- Admin 60% (manga FAIT , Chapitre FAIT , Page FAIT , Slider, Portfolio )
+- portfolio
+- message
+- maquette 60%
+- Lecture + ajax
+- Abonnement
+- Competition ? (manque back-end facile a faire)
+- Format image etc.. 
+- Profil
+- Regler le bug select (tous les chapitres de tous les mangas sont selectionés) : FAIT
+- Ajouter ARC & modifier back-end chapitre FAIT

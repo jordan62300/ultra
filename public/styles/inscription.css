@@ -1,0 +1,164 @@
+body {
+    background-color: #111017;
+    color: #fff;
+    overflow-x: hidden;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-container {
+    margin: 100px 0;
+    width: 560px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(
+      to bottom,
+      #272b50,
+      #2e2749,
+      #332242,
+      #361e3a,
+      #371b33
+    );
+    position: relative;
+  }
+  
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 18%;
+  }
+  
+  .logo {
+    width: 174px;
+    height: 52px;
+    position: absolute;
+    top: -2.5%;
+  }
+  
+  .menu {
+    display: flex;
+  
+    margin-bottom: 80px;
+  }
+  
+  .menu a {
+    font-family: "MontserratBold";
+    font-size: 23px;
+    color: #fff;
+  }
+  
+  .login {
+    margin: 0 100px 0 59px;
+  }
+
+  .active{
+    border-bottom: #e61654 solid 2px;
+    padding-bottom: 10px;
+  }
+  
+  .mdp {
+      margin-bottom: 100px;
+    }
+  
+  .register {
+    margin-right: 59px;
+  }
+  
+  label {
+    color: grey;
+    margin-bottom: 5px;
+  }
+  
+  .pseudo {
+  }
+  
+  .input-container {
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "MontserratMedium";
+    font-size: 13px;
+  }
+
+  form div{
+      width:263px;
+  }
+  
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    transition: background-color 5000s;
+    -webkit-text-fill-color: #fff !important;
+  }
+
+  
+  input {
+    border: 0;
+    border-bottom: 2px solid #fff;
+    background: transparent;
+    width: 100%;
+    padding: 8px 0 5px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 45.5px;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  
+  
+  .btn {
+    background-color: #e61c53;
+    width: 380px;
+    height: 68px;
+    font-family: "MontserratBold";
+    font-size: 23px;
+    color: #fff;
+    -webkit-box-shadow: 10px 9px 18px -5px rgba(0, 0, 0, 0.52);
+    -moz-box-shadow: 10px 9px 18px -5px rgba(0, 0, 0, 0.52);
+    box-shadow: 10px 9px 18px -5px rgba(0, 0, 0, 0.52);
+  }
+  
+  button {
+    outline: none;
+    border: 0;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #cf194a;
+  }
+  
+  button:active {
+    background-color: #cf194a;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  
+  .reset {
+      margin-top: 29px;
+      color:#5A5A5A;
+      font-family:"MontserratBold" ;
+      font-size: 13px;
+  }
+  

@@ -1,0 +1,45 @@
+body {
+    background-color: #111017;
+    color: #fff;
+    overflow-x: hidden;
+  }
+  
+  section {
+    margin-left: 300px;
+  }
+  
+  .preview-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100vw - 300px);
+    background-color: #111017;
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: cover;
+    flex-wrap: wrap;
+  }
+  
+  .preview-list {
+    display: flex;
+    height: auto;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .preview-item {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    background-color: #111017;
+    margin: 10px;
+  }
+  
+  
+  .preview-item img {
+    margin-left: 10px;
+    width: 355px;
+    height: 200px;
+
+  }
+  

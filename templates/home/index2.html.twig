@@ -1,0 +1,287 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!
+{% endblock %}
+{% block stylesheets %}
+	{{parent()}}
+	<link rel="stylesheet" href="js/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="js/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+	<link href="styles/home2.css" rel="stylesheet">
+	<link rel="stylesheet" href="fonts/fontawesome/css/all.css">
+
+	<link rel="stylesheet" type="text/css" href="js/slick-1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="js/slick-1.8.1/slick/theme/slick-theme.css"/>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous" defer></script>
+
+	<script src="js/OwlCarousel2-2.3.4/dist/owl.carousel.min.js" defer></script>
+	<script type="text/javascript" src="js/slick-1.8.1/slick/slick.min.js" defer></script>
+	<script type="text/javascript" src="js/owlSlider2.js" defer></script>
+	<script type="text/javascript" src="js/headerHomeSlider.js" defer></script>
+	<script type="text/javascript" src="js/owlSlider3.js" defer></script>
+
+
+	<script src="js/test.js" defer></script>
+{% endblock %}
+
+{% block body %}
+	{{parent()}}
+	<!--
+			<header>
+				<div class="container-slider">
+					<div class=" center owl-carousel owl-carousel2">
+						<div class="item">
+							<a href="#">
+								<img class="img-slider" src="assets/imagesStatic/wintercup.png" alt="">
+							</a>
+						</div>
+						<div class="item black">
+							<a href="#">
+								<img class="img-slider" src="assets/imagesStatic/wintercup.png" alt="">
+							</a>
+						</div>
+						<div class="item">
+							<a href="#">
+								<img class="img-slider" src="assets/imagesStatic/wintercup.png" alt="">
+							</a>
+						</div>
+					</div>
+		
+				</div>
+			</header>
+			-->
+	<header>
+		<div class="header-container">
+			<div class="owl-carousel owl-theme header-slider">
+				<div class="item-header">
+					<img class="img-header" src="assets/imagesStatic/wintercup.png" alt="">
+				</div>
+				<div class="item-header">
+					<img class="img-header" src="assets/imagesStatic/wintercup.png" alt="">
+				</div>
+				<div class="item-header">
+					<img class="img-header" src="assets/imagesStatic/wintercup.png" alt="">
+				</div>
+			</div>
+		</div>
+	</header>
+	<!--
+			<section>
+				<h2 class="title1">
+					Ultra Manga c'est quoi ?
+				</h2>
+				<div class="schema-container">
+					<div class="schema-list">
+						<div class="schema-item schema-item-red">
+							<p>Etre un createur</p>
+						</div>
+						<div class="schema-item schema-item-blue">
+							<p>Etre un lecteur</p>
+						</div>
+						<div class="schema-item schema-item-yellow">
+							<p>Ultra +</p>
+						</div>
+						<div class="schema-item schema-item-pink">
+							<p>La communauté</p>
+						</div>
+						<div class="schema-item schema-item-black">
+							<p>Ultra manga</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			-->
+	<section>
+		<div class="top5-container">
+			<div class="item-top-container">
+				<a href=""><img src="assets/imagesStatic/kuroko.png" alt=""></a>
+			</div>
+			<div class="item-top-container">
+				<a href=""><img src="assets/imagesStatic/kuroko.png" alt=""></a>
+			</div>
+			<div class="item-top-container">
+				<a href=""><img src="assets/imagesStatic/kuroko.png" alt=""></a>
+			</div>
+			<div class="item-top-container">
+				<a href=""><img src="assets/imagesStatic/kuroko.png" alt=""></a>
+			</div>
+			<div class="item-top-container">
+				<a href=""><img src="assets/imagesStatic/kuroko.png" alt=""></a>
+			</div>
+		</div>
+	</section>
+	<!--
+		<section>
+	
+			<div class="mangas-competition-container">
+				<div class="mangas-competition-listitems owl-carousel">
+					<div class="info-competition-manga">
+						<div class="competition-rang">1</div>
+						<img src="assets/imagesStatic/Berserk.jpg" alt="">
+					</div>
+					<div class="info-competition-manga">
+						<div class="competition-rang competition-rang2">2</div>
+						<img src="assets/imagesStatic/Berserk.jpg" alt="">
+					</div>
+					<div class="info-competition-manga">
+						<div class="competition-rang competition-rang3">3</div>
+						<img src="assets/imagesStatic/Berserk.jpg" alt="">
+					</div>
+					<div class="info-competition-manga">
+						<div class="competition-rang competition-rang4">4</div>
+						<img src="assets/imagesStatic/Berserk.jpg" alt="">
+					</div>
+					<div class="info-competition-manga">
+						<div class="competition-rang competition-rang5">5</div>
+						<img src="assets/imagesStatic/Berserk.jpg" alt="">
+					</div>
+					<div class="info-competition-manga">
+						<div class="competition-rang competition-rang5">6</div>
+						<img src="assets/imagesStatic/Berserk.jpg" alt="">
+					</div>
+	
+				</div>
+			</div>
+	
+	
+		</section>
+		-->
+
+	<section>
+		<h2 class="title1">
+			Vos favoris
+		</h2>
+	</section>
+
+	<section>
+		<h2 class="title2">
+			Ultra Manga c'est quoi ?
+		</h2>
+		<div class="container-manga">
+			<img src="assets/imagesStatic/onepiece.png" alt="">
+			<img src="assets/imagesStatic/demonslayer.png" alt="">
+			<img src="assets/imagesStatic/NarutoS.png" alt="">
+			<img src="assets/imagesStatic/basket.png" alt="">
+			<img src="assets/imagesStatic/psychopass.png" alt="">
+		</div>
+		<h2 class="title3">
+			Les sorties
+		</h2>
+		<div class="container-manga">
+			<img src="assets/imagesStatic/onepiece.png" alt="">
+			<img src="assets/imagesStatic/demonslayer.png" alt="">
+			<img src="assets/imagesStatic/NarutoS.png" alt="">
+			<img src="assets/imagesStatic/basket.png" alt="">
+			<img src="assets/imagesStatic/psychopass.png" alt="">
+		</div>
+		<div class="filter">
+			<h2 class="title4">
+				Le catalogue en entier
+			</h2>
+			<p>Filtrer par :
+			</p>
+		</div>
+		<div class="container-manga">
+			<img src="assets/imagesStatic/onepiece.png" alt="">
+			<img src="assets/imagesStatic/demonslayer.png" alt="">
+			<img src="assets/imagesStatic/NarutoS.png" alt="">
+			<img src="assets/imagesStatic/basket.png" alt="">
+			<img src="assets/imagesStatic/psychopass.png" alt="">
+		</div>
+		<div class="container-manga">
+			<img src="assets/imagesStatic/onepiece.png" alt="">
+			<img src="assets/imagesStatic/demonslayer.png" alt="">
+			<img src="assets/imagesStatic/NarutoS.png" alt="">
+			<img src="assets/imagesStatic/basket.png" alt="">
+			<img src="assets/imagesStatic/psychopass.png" alt="">
+		</div>
+		<div class="container-manga">
+			<img src="assets/imagesStatic/onepiece.png" alt="">
+			<img src="assets/imagesStatic/demonslayer.png" alt="">
+			<img src="assets/imagesStatic/NarutoS.png" alt="">
+			<img src="assets/imagesStatic/basket.png" alt="">
+			<img src="assets/imagesStatic/psychopass.png" alt="">
+		</div>
+
+		<div class="container-manga">
+			<div class="listmanga">
+				{% for manga in mangas %}
+
+
+					<img src="{{ vich_uploader_asset(manga,'imageFile')}}" alt="">
+
+				{% endfor %}
+			</div>
+		</div>
+	</section>
+	<section id="teste">
+		<div class="container-manga-test">
+			<span class="opacity-div2"></span>
+			<div class="list-test owl-carousel">
+				<div class="item-slider-owl">
+					<img src="assets/imagesStatic/narutoportrait.png" alt="">
+				</div>
+				<div class="item-slider-owl">
+					<img src="assets/imagesStatic/bakiportrait.png" alt="">
+				</div>
+				<div class="item-slider-owl">
+					<img src="assets/imagesStatic/narutoportrait.png" alt="">
+				</div>
+				<div class="item-slider-owl">
+					<img src="assets/imagesStatic/bakiportrait.png" alt="">
+				</div>
+				<div class="item-slider-owl">
+					<img src="assets/imagesStatic/narutoportrait.png" alt="">
+				</div>
+				<div class="item-slider-owl">
+					<img src="assets/imagesStatic/bakiportrait.png" alt="">
+				</div>
+				<div class="item-slider-owl">
+					<img src="assets/imagesStatic/narutoportrait.png" alt="">
+				</div>
+				<div class="item-slider-owl">
+					<img src="assets/imagesStatic/bakiportrait.png" alt="">
+				</div>
+				<div class="item-slider-owl">
+					<img src="assets/imagesStatic/narutoportrait.png" alt="">
+				</div>
+				<div class="item-slider-owl">
+					<img src="assets/imagesStatic/bakiportrait.png" alt="">
+				</div>
+				<div class="item-slider-owl">
+					<img src="assets/imagesStatic/narutoportrait.png" alt="">
+				</div>
+				<div class="item-slider-owl">
+					<img src="assets/imagesStatic/bakiportrait.png" alt="">
+				</div>
+				<div class="item-slider-owl">
+					<img src="assets/imagesStatic/narutoportrait.png" alt="">
+				</div>
+				<div class="item-slider-owl">
+					<img src="assets/imagesStatic/bakiportrait.png" alt="">
+				</div>
+				<div class="item-slider-owl">
+					<img src="assets/imagesStatic/narutoportrait.png" alt="">
+				</div>
+				<div class="item-slider-owl">
+					<img src="assets/imagesStatic/bakiportrait.png" alt="">
+				</div>
+				<div class="item-slider-owl">
+					<img src="assets/imagesStatic/narutoportrait.png" alt="">
+				</div>
+				<div class="item-slider-owl">
+					<img src="assets/imagesStatic/bakiportrait.png" alt="">
+				</div>
+				<div class="item-slider-owl">
+					<img src="assets/imagesStatic/narutoportrait.png" alt="">
+				</div>
+				<div class="item-slider-owl">
+					<img src="assets/imagesStatic/bakiportrait.png" alt="">
+				</div>
+			</div>
+			<span class="opacity-div1"></span>
+		</div>
+
+
+	</section>
+{% endblock %}
