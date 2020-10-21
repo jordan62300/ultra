@@ -64,28 +64,7 @@
 		</div>
 	</section>
 
-	<section>
-		<h2 class="title1">
-			Vos favoris
-		</h2>
-		<div class="favori-container">
-			<div class="favori-item">
-				<img src="assets/imagesStatic/kuroko.png" alt="">
-			</div>
-			<div class="favori-item">
-				<img src="assets/imagesStatic/kuroko.png" alt="">
-			</div>
-			<div class="favori-item">
-				<img src="assets/imagesStatic/kuroko.png" alt="">
-			</div>
-		</div>
-	</section>
-
 	<section class="slidersection">
-		<h2 class="title1 title-slider">
-			LES ASPIRANTS MANGAKA
-		</h2>
-
 		<div class="container-manga-test first">
 			<div id="oui" class="list-test list-test1 owl-carousel">
 				{% for key, manga in mangas %}
@@ -97,24 +76,8 @@
 
 		</div>
 	</section>
-
-	<section class="slidersection">
-		<h2 class="title1 title-slider">
-			LES NOUVEAUX
-		</h2>
-		<div class="container-manga-test">
-		<!--	<span class="opacity-div2"></span> -->
-			<div class="list-test list-test2 owl-carousel">
-				{% for key, manga in mangas %}
-					<div data-soutien="{{manga.soutien}}" data-palier="250" data-vitrineune="images/mangas/vitrineUne/{{manga.fileNameVitrineUne}}" data-author="{{manga.users.username}}" data-nom="{{manga.nom}}" data-description="{{manga.description}}" id="{{key+1}}" class="item-slider-owl nouveau-item">
-					<a href="#newDic">	<img src="{{ vich_uploader_asset(manga,'imageFile')}}" alt="" class="img-slider"/> </a>
-					</div>
-				{% endfor %}
-			</div>
-		<!--	<span class="opacity-div1"></span>  -->
-		</div>
-
-
+	<section>
+	
 	</section>
 	<section id="catalogue">
 		<h2 class="title2 title-center">

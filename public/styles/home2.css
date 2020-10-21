@@ -22,7 +22,7 @@ body {
   }
   
   header {
-    padding-top: 71.391px;
+    padding-top: 54.391px;
     background-color: #140714;
   }
   
@@ -74,7 +74,6 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding-bottom: 115px;
   }
   
   .item-header{
@@ -101,7 +100,7 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 84px;
   }
           
   .item-top-container{
@@ -178,7 +177,7 @@ body {
   /* DEBUT SLIDER COTNENUE */
   
     .slidersection{
-      margin-left: 210px!important;
+      margin-left: 188px!important;
     }
 
     .title-slider{

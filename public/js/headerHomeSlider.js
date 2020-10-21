@@ -3,7 +3,7 @@ $(document).ready(function(){
         margin:0,
         items:1,
         loop:true,
-        dots: true,
+        dots: false,
         nav:false,
         navText : ["<i class='fa fa-chevron-left slider2'></i>","<i class='fa fa-chevron-right slider2'></i>"],
         navClass:["owl-prev2" , "owl-next2"],

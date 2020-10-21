@@ -5,6 +5,9 @@
 {% block stylesheets %}
 	<link rel="stylesheet" href="/styles/fonts.css">
 	<link rel="stylesheet" href="/styles/vitrine.css">
+	<link rel="stylesheet" href="fonts/fontawesome/css/all.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" defer></script>
+	<script type="text/javascript" src="js/faq.js" defer></script>
 {% endblock %}
 {% block body %}
 	<section>
@@ -17,18 +20,87 @@
 			</p>
 		</div>
 		<form class="reserver" action="">
-			<input placeholder="Adresse mail" type="mail">
-			<button>Reservez votre place</button>
+			{{ form(vitrineForm)}}
 		</form>
 		<div class="video-container">
 			<iframe style="border:0;" width="1116" height="536" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
 		</div>
-        <div class="reseau-container">
-            <p>Suivez le projet sur les réseaux sociaux</p>
-            <a href="#youtube"><img src="assets/imagesStatic/youtube2.png" alt=""></a>
-            <a href="twitter"><img src="assets/imagesStatic/twitter2.png" alt=""></a>
-            <a href="facebook"><img src="assets/imagesStatic/facebook2.png" alt=""></a>
-            <a href="insta"><img src="assets/imagesStatic/insta2.png" alt=""></a>
-        </div>
+		<div class="reseau-container">
+			<p>Suivez le projet sur les réseaux sociaux</p>
+			<a href="#youtube"><img src="assets/imagesStatic/youtube2.png" alt=""></a>
+			<a href="twitter"><img src="assets/imagesStatic/twitter2.png" alt=""></a>
+			<a href="facebook"><img src="assets/imagesStatic/facebook2.png" alt=""></a>
+			<a href="insta"><img src="assets/imagesStatic/insta2.png" alt=""></a>
+		</div>
+	</section>
+	<section>
+		<div class="description1-container">
+			<div class="ronded-container">
+				<div class="ronded-ext">
+					<div class="ronded-int"></div>
+				</div>
+			</div>
+			<div class="description">
+				<h1>La meilleure compétition de manga en France.</h1>
+				<p>Découvrez les pépites du manga français et propulsez votre préféré au sommet.</p>
+			</div>
+		</div>
+		<div class="info-container">
+			<div class="info-item">
+				<img src="assets/imagesStatic/preview1.png" alt="imagesite1">
+				<p>Reprenez votre lecture</p>
+			</div>
+			<div class="info-item">
+				<img src="assets/imagesStatic/preview2.png" alt="imagesite2">
+				<p>Une plateforme à la netflix</p>
+			</div>
+			<div class="info-item">
+				<img src="assets/imagesStatic/preview3.png" alt="">
+				<p>Lisez dans les meilleures conditions</p>
+			</div>
+		</div>
+		<div class="description2-container">
+
+			<div class="description">
+				<h1>Soutenez les mangakas  indépendants.</h1>
+				<p>Aidez vos mangakas préférés a franchir les étapes pour devenir mangaka.</p>
+			</div>
+			<div class="ronded-container">
+				<div class="ronded-ext">
+					<div class="ronded-int2"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="cutdiv"></div>
+		<div class="question-container">
+			<h1>Vous êtes mangaka ?</h1>
+			<p>Si vous souhaitez participer à la compétition, envoyez-nous votre travail.</p>
+			<a href="#">Plus d'infos</a>
+		</div>
+		<div class="faq-container">
+			<h1>Questions courantes</h1>
+			<div class="item-faq-container">
+				<p>Ultra Manga, c'est quoi ?</p>
+				<i class="fas fa-times croix transformdeg"></i>
+			</div>
+			<div class="item-faq-container">
+				<p>C'est payant ?</p>
+				<i class="fas fa-times croix transformdeg"></i>
+			</div>
+			<div class="item-faq-container">
+				<p>L'avantage pour l'auteur ?</p>
+				<i class="fas fa-times croix transformdeg"></i>
+			</div>
+			<div class="item-faq-container">
+				<p>Une application mobile ?</p>
+				<i class="fas fa-times croix transformdeg"></i>
+			</div>
+			<div class="item-faq-container">
+				<p>Qui sommes nous ?</p>
+				<i class="fas fa-times croix transformdeg"></i>
+			</div>
+		</div>
 	</section>
 {% endblock %}
